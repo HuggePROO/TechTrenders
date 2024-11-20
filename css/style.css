@@ -7,22 +7,25 @@ body {
 .wrapper1 {
     display: grid;
     row-gap: 5%;
+    height: 200px;
+    width: 100%;
     grid-template-columns: 5% 65% 25% 5%;
-    grid-template-rows: 10% 80px;
+    grid-template-rows: 50px;
     grid-template-areas:
-        'hd hd hd hd'
-        'ft ft ft ft'
+        'bx bx bx bx';
 
-}
 
-head {
-    grid-area: hd;
-    background-color: #2980b9;
+
+    .box1 {
+        grid-area: bx;
+        line-height: 10px;
+        padding-left: 10px;
+        background-color: #2980b9;
+    
     
 
+    }
+
+    foot
 }
 
-footer {
-    grid-area: ft;
-
-}
