@@ -1,0 +1,28 @@
+body {
+    font-family: "Roboto", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    background-color: white;
+}
+
+.wrapper1 {
+    display: grid;
+    row-gap: 5%;
+    grid-template-columns: 5% 65% 25% 5%;
+    grid-template-rows: 10% 80px;
+    grid-template-areas:
+        'hd hd hd hd'
+        'ft ft ft ft'
+
+}
+
+head {
+    grid-area: hd;
+    background-color: #2980b9;
+    
+
+}
+
+footer {
+    grid-area: ft;
+
+}
