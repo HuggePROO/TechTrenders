@@ -2,13 +2,22 @@ body {
     font-family: "Roboto", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
     background-color: white;
+    overflow-x: hidden;
+    --TTcolor = #980b9;
 }
 
-.wrapper1 {
+.coverimage {
+    width: 100%;
+    margin-top:50px;
+}
+
+
+.ttheadline {
     display: grid;
     row-gap: 5%;
-    height: 200px;
+    height: 60px;
     width: 100%;
+    position:fixed;left:0;top:0;
     grid-template-columns: 5% 65% 25% 5%;
     grid-template-rows: 50px;
     grid-template-areas:
@@ -20,12 +29,78 @@ body {
         grid-area: bx;
         line-height: 10px;
         padding-left: 10px;
-        background-color: #2980b9;
+        background-color: #2980b9;  
+        color: white;  
+    }
+
+
+}
+
+ 
+
+.mainbox {
+    display: grid;
+    row-gap: 5%;
+    column-gap: 5%;
+    height: 200px;
+    width: 100%;
+    padding-left: 50px;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 20px;
+    grid-template-areas:
+        'sc as'
+        's2 as'
+        's3 as'
+        'ft ft';
+
+
+
+    .sec {
+        grid-area: sc;
+        line-height: 10px;
+        
+    }
+    .sec2 {
+        grid-area: s2;
+        line-height: 20px;
+        margin-top: 25px;
+        color: darkslategray;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     
+    }
+
+    .sec3 {
+        font-size: larger;
+        margin-top: -15px;
+        grid-area: s3;
+        line-height: 30px;
+        font-family:'Times New Roman', Times, serif
     
+    }
+
+    footer {
+        grid-area: ft;
+        line-height: 10px;
 
     }
 
-    foot
-}
 
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 10px;
+        
+        
+
+
+        .item {
+            width: 65%;
+            height: auto;
+            flex-basis: 10%;
+            flex: none;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+    }
+}
