@@ -83,9 +83,9 @@ body {
     }
 
     .sec3 {
+        grid-area: s3;
         font-size: larger;
         margin-top: -15px;
-        grid-area: s3;
         line-height: 30px;
         font-family:'Times New Roman', Times, serif
     
@@ -144,7 +144,38 @@ body {
     grid-template-areas:
         'fd as'
         'ft ft';
+
         
+    
+        a {
+            text-decoration: none;
+            color: black;
+            border: 10px solid white;
+            
+
+            h1 {
+                font-size: x-large;
+            }
+        
+            h2 {
+                margin-top: 0px;
+                font-size: medium;
+            }
+        }
+
+        a:hover {
+            font-size: larger;
+            border: none;
+            
+            h1 {
+                font-size: xx-large;
+            }
+
+            h2 {
+                font-size: larger;
+            }
+        }
+    
     .feeder {
         margin-top: 60px;
         grid-area: fd;
@@ -155,12 +186,13 @@ body {
         
         .popupbox {
             
-                
-
+            
+            
             img {
                 width: 100%;
                     
             }
+
         }
         
     }
