@@ -1,1 +1,0 @@
-# Bilder i denna mapp
